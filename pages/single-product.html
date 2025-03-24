@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digikala - single product</title>
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/fancybox.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/single-product.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container pt-2 pb-2">
+        <div class="d-flex">
+          <!-- right -->
+          <div class="header__right w-50 d-flex align-items-center">
+            <div class="header__logo-container d-md-none d-sm-none">
+              <img
+                class="header__logo"
+                src="../assets/images/full-horizontal.svg"
+                alt=""
+              />
+            </div>
+            <div class="header__search-container">
+              <input type="text" class="header__search" placeholder="جستجو" />
+              <i class="fa-light fa-magnifying-glass"></i>
+
+              <!-- Mobile logo -->
+              <div class="header__logo-mobile d-lg-none">
+                <img src="../assets/images/typography.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- left -->
+          <div
+            class="header__left w-50 d-flex justify-content-end align-items-center d-md-none d-sm-none"
+          >
+            <!-- Register btn Before login -->
+            <a href="#" class="header__auth-btn">
+              <i class="fa-light fa-arrow-left-from-bracket"></i>
+              ورود | ثبت نام
+            </a>
+
+            <!-- cart -->
+            <a href="" class="header__cart">
+              <i class="fa-light fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
+        <nav class="navbar mt-4 d-flex align-items-center d-sm-none d-md-none">
+          <div class="w-75">
+            <ul class="navbar__item-container d-flex align-items-center">
+              <li class="navbar__item">
+                <a href="#" class="ml-4 d-flex align-items-center">
+                  <i class="fa-light fa-bars ml-2"></i>
+                  دسته بندی کالاها
+                </a>
+              </li>
+
+              <li class="navbar__item">
+                <a href="#" class="ml-4 d-flex align-items-center">
+                  <i class="fa-light fa-badge-percent ml-2"></i>
+                  شگفت انگیز ها
+                </a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="ml-4 d-flex align-items-center">
+                  <i class="fa-light fa-basket-shopping ml-2"></i>
+                  سوپرمارکت
+                </a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="ml-4"
+                  ><i class="fa-light fa-gift-card ml-2"></i>
+                  کارت هدیه
+                </a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="ml-4 d-flex align-items-center">
+                  <i class="fa-light fa-fire ml-2"></i>
+                  پروفروش ترین ها
+                </a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="ml-4 d-flex align-items-center">
+                  <i class="fa-light fa-hundred-points ml-2"></i>
+                  تخفیف ها و پیشنهادها
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-25 d-flex align-items-center justify-content-end">
+            <button class="navbar__location">
+              <i class="fa-light fa-location-dot"></i>
+              لطفا شهر خود را انتخاب کنید
+            </button>
+          </div>
+        </nav>
+        <!-- <nav class="navbar-mobile d-lg-none">
+          <a href="" class="navbar-mobile__item">
+            <i class="fa-light fa-house"></i>
+            <p>خانه</p>
+          </a>
+          <a href="" class="navbar-mobile__item">
+            <i class="fa-light fa-layer-group"></i>
+            <p>دسته بندی</p>
+          </a>
+          <a href="" class="navbar-mobile__item">
+            <i class="fa-light fa-cart-shopping"></i>
+            <p>سبد خرید</p>
+          </a>
+          <a href="" class="navbar-mobile__item">
+            <i class="fa-brands fa-google-play"></i>
+            <p>مگ نت</p>
+          </a>
+          <a href="" class="navbar-mobile__item">
+            <i class="fa-light fa-user"></i>
+            <p>دیجی کالای من</p>
+          </a>
+        </nav> -->
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- breadcrumbs -->
+      <nav class="breadcrumbs-navBar">
+        <ul class="breadcrumbs-navBar__container x-scrollable">
+          <li class="breadcrumbs-navBar__item">
+            <a class="breadcrumbs-navBar__item-link" href="">دیجی کالا</a>
+          </li>
+          <li class="breadcrumbs-navBar__item">
+            <a class="breadcrumbs-navBar__item-link" href=""> کالای دیجیتال </a>
+          </li>
+          <li class="breadcrumbs-navBar__item">
+            <a class="breadcrumbs-navBar__item-link" href=""> لپ تاپ </a>
+          </li>
+          <li class="breadcrumbs-navBar__item">
+            <a class="breadcrumbs-navBar__item-link" href="">
+              لپ تاپ و الترابوک
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- gallery - info - buyBox -->
+      <section class="product-content">
+        <!-- gallery -->
+        <div class="product-gallery">
+          <div class="vertical-accessBar">
+            <ul class="vertical-accessBar__container">
+              <li class="vertical-accessBar__item">
+                <i class="fa-light fa-heart"></i>
+              </li>
+              <li class="vertical-accessBar__item">
+                <i class="fa-light fa-share-nodes"></i>
+              </li>
+              <li class="vertical-accessBar__item">
+                <i class="fa-light fa-bell-on"></i>
+              </li>
+              <li class="vertical-accessBar__item">
+                <i class="fa-light fa-chart-line"></i>
+              </li>
+              <li class="vertical-accessBar__item">
+                <i class="fa-light fa-code-compare"></i>
+              </li>
+              <li class="vertical-accessBar__item">
+                <i class="fa-light fa-chart-line"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="product-gellery__images">
+            <div class="product-gellery__images-container">
+              <a
+                href="javascript:;"
+                data-fancybox-trigger="gallery"
+                data-fancybox-index="0"
+              >
+                <img src="../assets/images/product/p-t-5.jpg" />
+              </a>
+            </div>
+            <div class="product-gellery__images-thumbnail">
+              <a
+                class="product-gellery__images-thumbnail-item"
+                data-fancybox="gallery"
+                data-src="../assets/images/product/p-t-1.jpg"
+              >
+                <img src="../assets/images/product/p-t-1.jpg" />
+              </a>
+
+              <a
+                class="product-gellery__images-thumbnail-item"
+                data-fancybox="gallery"
+                data-src="../assets/images/product/p-t-2.jpg"
+              >
+                <img src="../assets/images/product/p-t-2.jpg" />
+              </a>
+
+              <a
+                class="product-gellery__images-thumbnail-item"
+                data-fancybox="gallery"
+                data-src="../assets/images/product/p-t-3.jpg"
+              >
+                <img src="../assets/images/product/p-t-3.jpg" />
+              </a>
+              <a
+                class="product-gellery__images-thumbnail-item"
+                data-fancybox="gallery"
+                data-src="../assets/images/product/p-t-4.jpg"
+              >
+                <img src="../assets/images/product/p-t-4.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- info -->
+        <div class="product-info">
+          <nav class="product-info__breadcrumbs">
+            <ul class="product-info__breadcrumbs-container">
+              <li class="product-info__breadcrumbs-item">
+                <a href="" class="product-info__breadcrumbs-link">دیجی کالا</a>
+              </li>
+              /
+              <li class="product-info__breadcrumbs-item">
+                <a href="" class="product-info__breadcrumbs-link"
+                  >کالای دیجیتال</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <h1 class="product-info__title">
+            لپ تاپ 16 اینچی ایسوس مدل ROG Strix G16 G634JZR-N4111-i9 14900HX
+            64GB 2SSD RTX4080 - کاستوم شده
+          </h1>
+          <div class="product-info__title-en">
+            <p>
+              Asus ROG Strix G634JZR-N4111-i9 14900HX 64GB 2SSD RTX4080 16 inch
+              Laptop - Customized
+            </p>
+          </div>
+          <div class="d-flex mb-3 align-items-center">
+            <span class="product-info__comments-count"> 1 دیدگاه </span>
+            <span class="dot-seprator"></span>
+            <span class="product-info__questions-count"> 3 پرسش</span>
+          </div>
+          <div class="product-info__color">
+            <div class="mb-3">
+              رنگ:
+              <span class="product-info__color-selected">مشکی</span>
+            </div>
+
+            <div class="product-info__color-list mb-3">
+              <div class="product-info__color-item">
+                <input type="radio" name="color" id="color1" checked />
+                <label for="color1" style="background: red"></label>
+                <i class="fa-light fa-check"></i>
+              </div>
+              <div class="product-info__color-item">
+                <input type="radio" name="color" id="color2" />
+                <label for="color2" style="background: blue"></label>
+                <i class="fa-light fa-check"></i>
+              </div>
+              <div class="product-info__color-item">
+                <input type="radio" name="color" id="color3" />
+                <label for="color3" style="background: rgb(0, 0, 0)"></label>
+                <i class="fa-light fa-check"></i>
+              </div>
+              <div class="product-info__color-item">
+                <input type="radio" name="color" id="color4" />
+                <label
+                  for="color4"
+                  style="background: rgb(255, 0, 234)"
+                ></label>
+                <i class="fa-light fa-check"></i>
+              </div>
+            </div>
+
+            <div class="mb-3">ویژگی ها:</div>
+            <div class="product-info__features x-scrollable mb-5">
+              <div class="product-info__features-item">
+                <p class="product-info__features-key ellipsis">سری پردازنده</p>
+                <p class="product-info__features-value">Core i9</p>
+              </div>
+              <div class="product-info__features-item">
+                <p class="product-info__features-key ellipsis">
+                  ظرفیت حافظه RAM
+                </p>
+                <p class="product-info__features-value">64 گیگابایت</p>
+              </div>
+              <div class="product-info__features-item">
+                <p class="product-info__features-key ellipsis">
+                  ظرفیت حافظه داخلی
+                </p>
+                <p class="product-info__features-value">دو ترابایت</p>
+              </div>
+              <div class="product-info__features-item">
+                <p class="product-info__features-key ellipsis">
+                  سازنده پردازنده گرافیکی
+                </p>
+                <p class="product-info__features-value">NVIDIA</p>
+              </div>
+              <div class="product-info__features-item">
+                <p class="product-info__features-key ellipsis">
+                  دقت صفحه نمایش
+                </p>
+                <p class="product-info__features-value">QHD|2560x1600 پیکسل</p>
+              </div>
+            </div>
+
+            <div class="product-info__features-btn-container mb-5">
+              <hr />
+              <div>
+                <button class="product-info__features-btn">
+                  مشاهده ویژگی ها
+                  <i class="fa fa-chevron-left mr-3"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info__return-rule">
+              <i class="fa fa-info-circle ml-2"></i>
+              <p>
+                امکان برگشت کالا در گروه لپ‌تاپ و الترابوک با دلیل "انصراف از
+                خرید" تنها در صورتی مورد قبول است که کالا در شرایط اولیه باشد
+                (در صورت پلمب بودن، کالا نباید باز شده باشد). تغییرات ایجادشده
+                در لپ‌تاپ‌های کاستوم (برای مثال ارتقا هارد، رم و...) توسط شرکت
+                گارانتی‌کننده و به صورت رسمی انجام شده است و شامل گارانتی
+                می‌شوند. لپ تاپ کاستوم به معنی ارتقا فنی بعضی قطعات لپ تاپ نو
+                (آکبند) و بر اساس استاندارد شرکت تولیدکننده است، لطفا برای
+                اطلاعات بیشتر در این مورد، به سوالات متداول مراجعه فرمایید. نصب
+                ویندوز - دیجی کالا سرویس راه‌های ثبت درخواست نصب ویندوز: 1- به
+                سایت Digikala-service.com رفته و در قسمت خدمات نصب، درخواست نصب
+                ویندوز خود را ثبت کنید. 2- برای ثبت درخواست با شماره
+                61930010-021 داخلی 1 تماس بگیرید. پس از ثبت درخواست، کارشناسان
+                دیجی‌کالا‌ سرویس، زمان ارائه خدمات را با شما هماهنگ می‌کنند.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- buyBox -->
+        <div class="product-buy-box d-md-none d-sm-none">
+          <div class="product-buy-box__seller">
+            <span class="fs-6 fw-bold">فروشنده</span>
+            <div>
+              <i class="fa-light fa-store"></i>
+              <span class="product-buy-box__seller-name">درسا پخش</span>
+              <span class="product-buy-box__seller-rate">منتخب</span>
+            </div>
+            <div class="pr-4 mb-3 mt-3">
+              <span>
+                <span class="product-buy-box__seller-rate-percent">80%</span>
+                رضایت از کالا
+              </span>
+              |
+              <span
+                >عملکرد
+
+                <span class="product-buy-box__seller-rate-feedbak"> عالی </span>
+              </span>
+            </div>
+          </div>
+          <div
+            class="product-buy-box__price d-flex align-items-center justify-content-between pt-3 pb-3"
+          >
+            <!-- right -->
+            <i class="fa fa-info-circle"></i>
+            <!-- left -->
+            <div>
+              <!-- up -->
+              <div class="d-flex justify-content-end align-items-center mb-2">
+                <span class="product-buy-box__price-old">2,500,000</span>
+                <span class="product-price-discount">14%</span>
+              </div>
+              <!-- down -->
+              <div class="d-flex">
+                <span class="product-buy-box__price-new">1,189,000</span>
+                <span>تومان</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-buy-box__addToBasket">
+            <button class="addToBasket-btn w-100">افزودن به سبد خرید</button>
+            <div class="d-flex align-items-center mt-3 mb-3">
+              <i class="fa-light fa-shield-check ml-2 fs-6"></i>
+              گارانتی ۶ ماهه شرکت ورنا
+            </div>
+          </div>
+        </div>
+        <!-- buyBox-mobile -->
+        <div class="product-buy-box__mobile d-lg-none">
+          <div
+            class="product-buy-box__price d-flex align-items-center justify-content-between"
+          >
+            <div class="product-buy-box__addToBasket w-50">
+              <button class="addToBasket-btn w-100">افزودن به سبد خرید</button>
+            </div>
+            <div class="d-block">
+              <div class="d-flex justify-content-end align-items-center mb-2">
+                <span class="product-buy-box__price-old">2,500,000</span>
+                <span class="product-price-discount">14%</span>
+              </div>
+
+              <div class="d-flex">
+                <span class="product-buy-box__price-new">1,189,000</span>
+                <span>تومان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trust badges section -->
+      <section class="trust-badges-section">
+        <div class="trust-badges-section__item d-flex align-items-center">
+          <div class="trust-badges-section__item-icon ml-2">
+            <img
+              src="../assets/images/product/info-section/express-delivery.svg"
+              alt=""
+            />
+          </div>
+          <div class="trust-badges-section__item-title">امکان تحویل اکسپرس</div>
+        </div>
+        <div class="trust-badges-section__item d-flex align-items-center">
+          <div class="trust-badges-section__item-icon ml-2">
+            <img
+              src="../assets/images/product/info-section/support.svg"
+              alt=""
+            />
+          </div>
+          <div class="trust-badges-section__item-title">
+            ۲۴ ساعته، ۷ روز هفته
+          </div>
+        </div>
+        <div class="trust-badges-section__item d-flex align-items-center">
+          <div class="trust-badges-section__item-icon ml-2">
+            <img
+              src="../assets/images/product/info-section/cash-on-delivery.svg"
+              alt=""
+            />
+          </div>
+          <div class="trust-badges-section__item-title">
+            امکان پرداخت در محل
+          </div>
+        </div>
+        <div class="trust-badges-section__item d-flex align-items-center">
+          <div class="trust-badges-section__item-icon ml-2">
+            <img
+              src="../assets/images/product/info-section/days-return.svg"
+              alt=""
+            />
+          </div>
+          <div class="trust-badges-section__item-title">
+            هفت روز ضمانت بازگشت کالا
+          </div>
+        </div>
+        <div class="trust-badges-section__item d-flex align-items-center">
+          <div class="trust-badges-section__item-icon ml-2">
+            <img
+              src="../assets/images/product/info-section/original-products.svg"
+              alt=""
+            />
+          </div>
+          <div class="trust-badges-section__item-title">
+            ضمانت اصل بودن کالا
+          </div>
+        </div>
+      </section>
+      <!-- sellers -->
+      <section class="product-sellers">
+        <div class="product-sellers__headline">
+          <p>فروشندگان این کالا</p>
+          <span class="headeline-border"></span>
+          <div class="product-sellers__container x-scrollable mt-4 mb-4">
+            <div class="product-sellers__item">
+              <div class="product-buy-box__seller row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div>
+                    <i class="fa-light fa-store"></i>
+                    <span class="product-buy-box__seller-name">درسا پخش</span>
+                    <span class="product-buy-box__seller-rate">منتخب</span>
+                  </div>
+                  <div class="pr-4 mb-3 mt-3">
+                    <span>
+                      <span class="product-buy-box__seller-rate-percent"
+                        >80%</span
+                      >
+                      رضایت از کالا
+                    </span>
+                    |
+                    <span
+                      >عملکرد
+
+                      <span class="product-buy-box__seller-rate-feedbak">
+                        عالی
+                      </span>
+                    </span>
+                  </div>
+                  <div class="plus-service">
+                    <i class="fa-light fa-star-christmas"></i>
+                    <p class="plus-service__title">خدمات پلاس</p>
+                    <p class="plus-service__deliveryType">
+                      ارسال فوری برای شهر تهران و کرج (رایگان)
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-sm-12 product-sellers_delivery"
+                >
+                  <div class="d-flex align-items-center">
+                    <i class="fa fa-truck ml-2"></i>
+                    <span class="product-sellers_delivery-name"
+                      >ارسال دیجی‌کالا</span
+                    >
+                  </div>
+                  <span class="product-sellers_delivery-time d-block mt-3 mb-3"
+                    >ارسال امروز (فعلا در شهر تهران و کرج)
+                  </span>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-sm-12 product-sellers_guarantee"
+                >
+                  <i class="fa-light fa-shield-check ml-2 fs-6"></i>
+                  <span class="product-sellers_guarantee-name"
+                    >گارانتی ۱۸ ماهه دیجی سرویس</span
+                  >
+                </div>
+                <div class="product-sellers_price col-lg-3 col-md-6 col-sm-12">
+                  <div class="d-flex align-items-center justify-content-around">
+                    <div class="product-sellers_price-old">2,500,000</div>
+                    <div class="product-sellers_price-new">2,250,000</div>
+                    <span class="product-price-discount">14%</span>
+                    <button class="addToBasket-btn">افزودن به سبد خرید</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-sellers__item">
+              <div class="product-buy-box__seller row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div>
+                    <i class="fa-light fa-store"></i>
+                    <span class="product-buy-box__seller-name">درسا پخش</span>
+                    <span class="product-buy-box__seller-rate">منتخب</span>
+                  </div>
+                  <div class="pr-4 mb-3 mt-3">
+                    <span>
+                      <span class="product-buy-box__seller-rate-percent"
+                        >80%</span
+                      >
+                      رضایت از کالا
+                    </span>
+                    |
+                    <span
+                      >عملکرد
+
+                      <span class="product-buy-box__seller-rate-feedbak">
+                        عالی
+                      </span>
+                    </span>
+                  </div>
+                  <div class="plus-service">
+                    <i class="fa-light fa-star-christmas"></i>
+                    <p class="plus-service__title">خدمات پلاس</p>
+                    <p class="plus-service__deliveryType">
+                      ارسال فوری برای شهر تهران و کرج (رایگان)
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-sm-12 product-sellers_delivery"
+                >
+                  <div class="d-flex align-items-center">
+                    <i class="fa fa-truck ml-2"></i>
+                    <span class="product-sellers_delivery-name"
+                      >ارسال دیجی‌کالا</span
+                    >
+                  </div>
+                  <span class="product-sellers_delivery-time d-block mt-3 mb-3"
+                    >ارسال امروز (فعلا در شهر تهران و کرج)
+                  </span>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-sm-12 product-sellers_guarantee"
+                >
+                  <i class="fa-light fa-shield-check ml-2 fs-6"></i>
+                  <span class="product-sellers_guarantee-name"
+                    >گارانتی ۱۸ ماهه دیجی سرویس</span
+                  >
+                </div>
+                <div class="product-sellers_price col-lg-3 col-md-6 col-sm-12">
+                  <div class="d-flex align-items-center justify-content-around">
+                    <div class="product-sellers_price-old">2,500,000</div>
+                    <div class="product-sellers_price-new">2,250,000</div>
+                    <span class="product-price-discount">14%</span>
+                    <button class="addToBasket-btn">افزودن به سبد خرید</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-sellers__item">
+              <div class="product-buy-box__seller row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div>
+                    <i class="fa-light fa-store"></i>
+                    <span class="product-buy-box__seller-name">درسا پخش</span>
+                    <span class="product-buy-box__seller-rate">منتخب</span>
+                  </div>
+                  <div class="pr-4 mb-3 mt-3">
+                    <span>
+                      <span class="product-buy-box__seller-rate-percent"
+                        >80%</span
+                      >
+                      رضایت از کالا
+                    </span>
+                    |
+                    <span
+                      >عملکرد
+
+                      <span class="product-buy-box__seller-rate-feedbak">
+                        عالی
+                      </span>
+                    </span>
+                  </div>
+                  <div class="plus-service">
+                    <i class="fa-light fa-star-christmas"></i>
+                    <p class="plus-service__title">خدمات پلاس</p>
+                    <p class="plus-service__deliveryType">
+                      ارسال فوری برای شهر تهران و کرج (رایگان)
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-sm-12 product-sellers_delivery"
+                >
+                  <div class="d-flex align-items-center">
+                    <i class="fa fa-truck ml-2"></i>
+                    <span class="product-sellers_delivery-name"
+                      >ارسال دیجی‌کالا</span
+                    >
+                  </div>
+                  <span class="product-sellers_delivery-time d-block mt-3 mb-3"
+                    >ارسال امروز (فعلا در شهر تهران و کرج)
+                  </span>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-sm-12 product-sellers_guarantee"
+                >
+                  <i class="fa-light fa-shield-check ml-2 fs-6"></i>
+                  <span class="product-sellers_guarantee-name"
+                    >گارانتی ۱۸ ماهه دیجی سرویس</span
+                  >
+                </div>
+                <div class="product-sellers_price col-lg-3 col-md-6 col-sm-12">
+                  <div class="d-flex align-items-center justify-content-around">
+                    <div class="product-sellers_price-old">2,500,000</div>
+                    <div class="product-sellers_price-new">2,250,000</div>
+                    <span class="product-price-discount">14%</span>
+                    <button class="addToBasket-btn">افزودن به سبد خرید</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-sellers__item">
+              <div class="product-buy-box__seller row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div>
+                    <i class="fa-light fa-store"></i>
+                    <span class="product-buy-box__seller-name">درسا پخش</span>
+                    <span class="product-buy-box__seller-rate">منتخب</span>
+                  </div>
+                  <div class="pr-4 mb-3 mt-3">
+                    <span>
+                      <span class="product-buy-box__seller-rate-percent"
+                        >80%</span
+                      >
+                      رضایت از کالا
+                    </span>
+                    |
+                    <span
+                      >عملکرد
+
+                      <span class="product-buy-box__seller-rate-feedbak">
+                        عالی
+                      </span>
+                    </span>
+                  </div>
+                  <div class="plus-service">
+                    <i class="fa-light fa-star-christmas"></i>
+                    <p class="plus-service__title">خدمات پلاس</p>
+                    <p class="plus-service__deliveryType">
+                      ارسال فوری برای شهر تهران و کرج (رایگان)
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-sm-12 product-sellers_delivery"
+                >
+                  <div class="d-flex align-items-center">
+                    <i class="fa fa-truck ml-2"></i>
+                    <span class="product-sellers_delivery-name"
+                      >ارسال دیجی‌کالا</span
+                    >
+                  </div>
+                  <span class="product-sellers_delivery-time d-block mt-3 mb-3"
+                    >ارسال امروز (فعلا در شهر تهران و کرج)
+                  </span>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-sm-12 product-sellers_guarantee"
+                >
+                  <i class="fa-light fa-shield-check ml-2 fs-6"></i>
+                  <span class="product-sellers_guarantee-name"
+                    >گارانتی ۱۸ ماهه دیجی سرویس</span
+                  >
+                </div>
+                <div class="product-sellers_price col-lg-3 col-md-6 col-sm-12">
+                  <div class="d-flex align-items-center justify-content-around">
+                    <div class="product-sellers_price-old">2,500,000</div>
+                    <div class="product-sellers_price-new">2,250,000</div>
+                    <span class="product-price-discount">14%</span>
+                    <button class="addToBasket-btn">افزودن به سبد خرید</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Tabs Item -->
+      <section class="tabs">
+        <div class="tabs-container">
+          <ul class="d-flex align-items-center">
+            <li class="tabs__item">
+              <a href="#intorduce" class="tabs__item-link">معرفی</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#details" class="tabs__item-link">بررسی تخصصی</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#features" class="tabs__item-link"> مشخصات</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#comments" class="tabs__item-link"> دیدگاه‌ها</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tabs content -->
+        <div class="tabs-content mt-3 d-flex">
+          <!-- right- content -->
+          <div class="tabs-content__right">
+            <!--intorduce  -->
+            <div class="intorduce tabs-content__section" id="intorduce">
+              <span class="tab-healine">معرفی</span>
+              <span class="headeline-border"></span>
+
+              <div class="intorduce__description p-3">
+                <p>
+                  ساعت هوشمند سامسونگ مدل Galaxy Watch6 44mm ساعت گلکسی واچ 6
+                  جدیدترین ساعت هوشمند سامسونگ است و هرچند از نظر ظاهری همان
+                  زیبایی گذشته را حفظ کرده، از نظر ویژگی‌های نرم‌افزاری و
+                  قابلیت‌ها پیشرفت‌های کوچک و بزرگی داشته است که آن را به
+                  انتخابی عالی برای ارتقا ساعت‌های قدیمی تبدیل می‌کند. این ساعت
+                  با داشتن بدنه آلومینیومی هم وزن سبک و هم مقاومت خوبی در برابر
+                  ضربه و خط و خش دارد و در کنار محافظ صفحه از جنس یاقوت کبود،
+                  می‌توانید روی استفاده مداوم از آن حساب باز کنید. وجود گواهی
+                  IP68 ...
+                </p>
+                <button class="show-more-btn d-flex align-items-center">
+                  بیشتر
+                  <i class="fa fa-chevron-left mr-1 fs-6"></i>
+                </button>
+              </div>
+            </div>
+            <!--details  -->
+            <div class="details tabs-content__section" id="details">
+              <span class="tab-healine">بررسی تخصصی</span>
+              <span class="headeline-border"></span>
+
+              <div class="details__description p-3">
+                <p>
+                  با معرفی سامسونگ Galaxy Watch6 44mm، دنیای ساعت‌های هوشمند
+                  متحول شد! این ساعت هوشمند، نه تنها از نظر ظاهری زیبا و شیک
+                  است، بلکه با ویژگی‌های نرم‌افزاری و سخت‌افزاری پیشرفته،
+                  تجربه‌ای به یاد ماندنی به کاربران هدیه می‌دهد. با بدنه‌ی
+                  آلومینیومی سبک و مقاوم، صفحه‌ی نمایش برتر با رزولوشن بالا و
+                  به‌روزرسانی اطلاعات بدن شما در سلامتی و فعالیت‌های ورزشی نقش
+                  بسزایی دارد. همچنین Galaxy Watch6 44mm از طریق ادغام
+                  فناوری‌های مدرن، امکاناتی را برای کاربران فراهم می‌آورد که
+                  تاکنون تنها در رویاها ممکن بوده است. این بررسی به معرفی یک
+                  ساعت هوشمند محبوب و پرطرفدار می‌پردازیم که با انعکاس جلوه‌های
+                  فناوری پیشرفته و طراحی بی‌نظیر، دغدغه‌های هرچه بیشتر کاربران
+                  را برآورده می‌کند و تجربه‌ی استفاده از یک ساعت هوشمند را به یک
+                  سطح جدید از رضایت و راحتی می‌رساند.
+                </p>
+                <button class="show-more-btn d-flex align-items-center">
+                  بیشتر
+                  <i class="fa fa-chevron-left mr-1 fs-6"></i>
+                </button>
+              </div>
+            </div>
+            <!-- features -->
+            <div class="features tabs-content__section" id="features">
+              <span class="tab-healine">مشخصات</span>
+              <span class="headeline-border"></span>
+
+              <div class="features__container p-3">
+                <div class="features__item">
+                  <div class="features__key">وزن</div>
+                  <div class="features__value">۱.۷ کیلوگرم</div>
+                </div>
+                <div class="features__item">
+                  <div class="features__key">ابعاد</div>
+                  <div class="features__value">۳۶۰.۳x۲۳۲.۵x۱۷.۹ میلی‌متر</div>
+                </div>
+                <div class="features__item">
+                  <div class="features__key">سازنده پردازنده</div>
+                  <div class="features__value">Intel</div>
+                </div>
+                <div class="features__item">
+                  <div class="features__key">سری پردازنده</div>
+                  <div class="features__value">Core i۳</div>
+                </div>
+                <div class="features__item">
+                  <div class="features__key">مدل پردازنده</div>
+                  <div class="features__value">N۳۰۵</div>
+                </div>
+                <div class="features__item">
+                  <div class="features__key">محدوده سرعت پردازنده</div>
+                  <div class="features__value">
+                    ۲.۸ گیگاهرتز تا ۴.۲ گیگاهرتز
+                  </div>
+                </div>
+
+                <button class="show-more-btn d-flex align-items-center">
+                  بیشتر
+                  <i class="fa fa-chevron-left mr-1 fs-6"></i>
+                </button>
+              </div>
+            </div>
+            <!-- comments -->
+            <div class="comments tabs-content__section" id="comments">
+              <span class="tab-healine">امتیاز و دیدگاه کاربران </span>
+              <span class="headeline-border"></span>
+
+              <div class="comments__container d-flex">
+                <!-- right -->
+                <div class="comments__rating d-sm-none d-md-none">
+                  <div>
+                    <span class="comments__rating-score fs-3"> ۴.۳</span>
+                    <span>از ۵</span>
+
+                    <div
+                      class="d-flex align-items-center stars__container mb-2"
+                    >
+                      <div class="stars" style="--rating: 70%"></div>
+                      <span>از مجموع ۱۳ امتیاز</span>
+                    </div>
+                    <span class="mb-3 d-block">
+                      شما هم درباره این کالا دیدگاه ثبت کنید
+                    </span>
+                    <button class="btn-outlined">ثبت دیدگاه</button>
+                    <div class="d-flex align-items-start mt-3">
+                      <i class="fa fa fa-info-circle ml-2"></i>
+                      <span>
+                        با ثبت دیدگاه بر روی کالاهای خریداری شده ۵ امتیاز در
+                        دیجی‌کلاب دریافت کنید</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- left -> comments list -->
+                <div class="comments__list">
+                  <div
+                    class="comments__list-arrangment d-flex justify-content-between mb-5"
+                  >
+                    <!-- right -->
+                    <div
+                      class="comments__list-arrangment-contaienr d-flex align-items-center x-scrollable"
+                    >
+                      <i class="fa-light fa-filter-list ml-3"></i>
+                      <span class="ml-3">مرتب سازی : </span>
+                      <ul class="comments__list-arrangment-items d-flex">
+                        <li>
+                          <a href="javascript:0">جدیدترین</a>
+                        </li>
+                        <li>
+                          <a href="javascript:0">مفیدترین</a>
+                        </li>
+                        <li>
+                          <a href="javascript:0">دیدگاه خریداران</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- left -->
+                    <div class="comments__list-total-count">۲۶ دیدگاه</div>
+                  </div>
+                  <div class="comments__fliterType mb-4">
+                    <span class="comments__fliterType-title">
+                      فیلتر بر اساس موضوع
+                    </span>
+                    <ul
+                      class="comments__fliterType-contaienr d-flex align-items-center x-scrollable"
+                    >
+                      <li class="comments__fliterType-item">
+                        <a
+                          class="comments__fliterType-item-link"
+                          href="javascript:0"
+                          >گارانتی</a
+                        >
+                      </li>
+                      <li class="comments__fliterType-item">
+                        <a
+                          class="comments__fliterType-item-link"
+                          href="javascript:0"
+                          >کیفیت کارایی</a
+                        >
+                      </li>
+                      <li class="comments__fliterType-item">
+                        <a
+                          class="comments__fliterType-item-link"
+                          href="javascript:0"
+                          >قیمت و ارزش خرید
+                        </a>
+                      </li>
+                      <li class="comments__fliterType-item">
+                        <a
+                          class="comments__fliterType-item-link"
+                          href="javascript:0"
+                          >ابعاد یا سایز
+                        </a>
+                      </li>
+                      <li class="comments__fliterType-item">
+                        <a
+                          class="comments__fliterType-item-link"
+                          href="javascript:0"
+                          >شباهت یا مغایرت
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="comments__score">
+                    <div class="comments__score-item">
+                      <div class="comments__score-percent">
+                        <span>۲۵% </span>
+                        <span>مثبت </span>
+                      </div>
+                      <div class="comments__score-progressBar">
+                        <div style="width: 30%"></div>
+                      </div>
+                      <div class="comments__score-count">۸۷۴ دیدگاه</div>
+                    </div>
+                    <div class="comments__score-item">
+                      <div class="comments__score-percent">
+                        <span>۲۵% </span>
+                        <span>مثبت </span>
+                      </div>
+                      <div class="comments__score-progressBar">
+                        <div style="width: 30%"></div>
+                      </div>
+                      <div class="comments__score-count">۸۷۴ دیدگاه</div>
+                    </div>
+                    <div class="comments__score-item">
+                      <div class="comments__score-percent">
+                        <span>۲۵% </span>
+                        <span>مثبت </span>
+                      </div>
+                      <div class="comments__score-progressBar">
+                        <div style="width: 30%"></div>
+                      </div>
+                      <div class="comments__score-count">۸۷۴ دیدگاه</div>
+                    </div>
+                  </div>
+
+                  <div class="comments__list-contaiener x-scrollable">
+                    <div class="comments__item">
+                      <div class="comments__user mb-3">
+                        <span class="comments__user-name">مهرداد دادشی</span>
+                        <span class="dot-seprator"></span>
+                        <span class="comments__user-time">19 روز پش</span>
+                      </div>
+                      <div class="stars" style="--rating: 70%"></div>
+                      <div class="comments__title mb-3">
+                        موبایل اس ۲۴ اولترا
+                      </div>
+                      <div class="comments__content">
+                        من گوشی اس ۲۲ اولترا داشتم.ولی یک گوشی دیگر میخواستم،هر
+                        چه گشتم با توجه به قیمت ۶۰ میلیون،هیچ گوشی دیگری پیدا
+                        نکردم. اگر بهتر بود قیمت خیلی بالاتری داشت.. راجع به خود
+                        گوشی هم که توضیح نمی‌خواهد.همه سامسونگ را می‌شناسند.
+                      </div>
+                      <ul class="comments__positive-points">
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <ul class="comments__negative-points">
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <div
+                        class="comments__footer justify-content-between d-flex align-items-center mt-3"
+                      >
+                        <div class="comments__info">
+                          <i class="fa-light fa-store"></i>
+                          <span>دیجی کالا</span>
+                        </div>
+                        <div class="comments__vots d-flex">
+                          <div class="comments__vots-like">
+                            5
+                            <i class="fa-light fa-thumbs-up"></i>
+                          </div>
+                          <div class="comments__vots-dislike mr-3">
+                            6
+                            <i class="fa-light fa-thumbs-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item">
+                      <div class="comments__user mb-3">
+                        <span class="comments__user-name">مهرداد دادشی</span>
+                        <span class="dot-seprator"></span>
+                        <span class="comments__user-time">19 روز پش</span>
+                      </div>
+                      <div class="stars" style="--rating: 70%"></div>
+                      <div class="comments__title mb-3">
+                        موبایل اس ۲۴ اولترا
+                      </div>
+                      <div class="comments__content">
+                        من گوشی اس ۲۲ اولترا داشتم.ولی یک گوشی دیگر میخواستم،هر
+                        چه گشتم با توجه به قیمت ۶۰ میلیون،هیچ گوشی دیگری پیدا
+                        نکردم. اگر بهتر بود قیمت خیلی بالاتری داشت.. راجع به خود
+                        گوشی هم که توضیح نمی‌خواهد.همه سامسونگ را می‌شناسند.
+                      </div>
+                      <ul class="comments__positive-points">
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <ul class="comments__negative-points">
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <div
+                        class="comments__footer justify-content-between d-flex align-items-center mt-3"
+                      >
+                        <div class="comments__info">
+                          <i class="fa-light fa-store"></i>
+                          <span>دیجی کالا</span>
+                        </div>
+                        <div class="comments__vots d-flex">
+                          <div class="comments__vots-like">
+                            5
+                            <i class="fa-light fa-thumbs-up"></i>
+                          </div>
+                          <div class="comments__vots-dislike mr-3">
+                            6
+                            <i class="fa-light fa-thumbs-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item">
+                      <div class="comments__user mb-3">
+                        <span class="comments__user-name">مهرداد دادشی</span>
+                        <span class="dot-seprator"></span>
+                        <span class="comments__user-time">19 روز پش</span>
+                      </div>
+                      <div class="stars" style="--rating: 70%"></div>
+                      <div class="comments__title mb-3">
+                        موبایل اس ۲۴ اولترا
+                      </div>
+                      <div class="comments__content">
+                        من گوشی اس ۲۲ اولترا داشتم.ولی یک گوشی دیگر میخواستم،هر
+                        چه گشتم با توجه به قیمت ۶۰ میلیون،هیچ گوشی دیگری پیدا
+                        نکردم. اگر بهتر بود قیمت خیلی بالاتری داشت.. راجع به خود
+                        گوشی هم که توضیح نمی‌خواهد.همه سامسونگ را می‌شناسند.
+                      </div>
+                      <ul class="comments__positive-points">
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <ul class="comments__negative-points">
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <div
+                        class="comments__footer justify-content-between d-flex align-items-center mt-3"
+                      >
+                        <div class="comments__info">
+                          <i class="fa-light fa-store"></i>
+                          <span>دیجی کالا</span>
+                        </div>
+                        <div class="comments__vots d-flex">
+                          <div class="comments__vots-like">
+                            5
+                            <i class="fa-light fa-thumbs-up"></i>
+                          </div>
+                          <div class="comments__vots-dislike mr-3">
+                            6
+                            <i class="fa-light fa-thumbs-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item">
+                      <div class="comments__user mb-3">
+                        <span class="comments__user-name">مهرداد دادشی</span>
+                        <span class="dot-seprator"></span>
+                        <span class="comments__user-time">19 روز پش</span>
+                      </div>
+                      <div class="stars" style="--rating: 70%"></div>
+                      <div class="comments__title mb-3">
+                        موبایل اس ۲۴ اولترا
+                      </div>
+                      <div class="comments__content">
+                        من گوشی اس ۲۲ اولترا داشتم.ولی یک گوشی دیگر میخواستم،هر
+                        چه گشتم با توجه به قیمت ۶۰ میلیون،هیچ گوشی دیگری پیدا
+                        نکردم. اگر بهتر بود قیمت خیلی بالاتری داشت.. راجع به خود
+                        گوشی هم که توضیح نمی‌خواهد.همه سامسونگ را می‌شناسند.
+                      </div>
+                      <ul class="comments__positive-points">
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <ul class="comments__negative-points">
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <div
+                        class="comments__footer justify-content-between d-flex align-items-center mt-3"
+                      >
+                        <div class="comments__info">
+                          <i class="fa-light fa-store"></i>
+                          <span>دیجی کالا</span>
+                        </div>
+                        <div class="comments__vots d-flex">
+                          <div class="comments__vots-like">
+                            5
+                            <i class="fa-light fa-thumbs-up"></i>
+                          </div>
+                          <div class="comments__vots-dislike mr-3">
+                            6
+                            <i class="fa-light fa-thumbs-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item">
+                      <div class="comments__user mb-3">
+                        <span class="comments__user-name">مهرداد دادشی</span>
+                        <span class="dot-seprator"></span>
+                        <span class="comments__user-time">19 روز پش</span>
+                      </div>
+                      <div class="stars" style="--rating: 70%"></div>
+                      <div class="comments__title mb-3">
+                        موبایل اس ۲۴ اولترا
+                      </div>
+                      <div class="comments__content">
+                        من گوشی اس ۲۲ اولترا داشتم.ولی یک گوشی دیگر میخواستم،هر
+                        چه گشتم با توجه به قیمت ۶۰ میلیون،هیچ گوشی دیگری پیدا
+                        نکردم. اگر بهتر بود قیمت خیلی بالاتری داشت.. راجع به خود
+                        گوشی هم که توضیح نمی‌خواهد.همه سامسونگ را می‌شناسند.
+                      </div>
+                      <ul class="comments__positive-points">
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__positive-points-item">
+                          <i class="fa fa-plus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <ul class="comments__negative-points">
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          رنگ بسیار شیک
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          همان چیزی که از سامسونگ انتظار میرفت
+                        </li>
+                        <li class="comments__negative-points-item">
+                          <i class="fa fa-minus"></i>
+                          آکبند و خوب سالم
+                        </li>
+                      </ul>
+                      <div
+                        class="comments__footer justify-content-between d-flex align-items-center mt-3"
+                      >
+                        <div class="comments__info">
+                          <i class="fa-light fa-store"></i>
+                          <span>دیجی کالا</span>
+                        </div>
+                        <div class="comments__vots d-flex">
+                          <div class="comments__vots-like">
+                            5
+                            <i class="fa-light fa-thumbs-up"></i>
+                          </div>
+                          <div class="comments__vots-dislike mr-3">
+                            6
+                            <i class="fa-light fa-thumbs-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- left buy box -->
+          <div class="tabs-content__left d-sm-none d-md-none">
+            <div class="product-buy-box">
+              <div class="product-buy-box__seller">
+                <span class="fs-6 fw-bold">فروشنده</span>
+                <div>
+                  <i class="fa-light fa-store"></i>
+                  <span class="product-buy-box__seller-name">درسا پخش</span>
+                  <span class="product-buy-box__seller-rate">منتخب</span>
+                </div>
+                <div class="pr-4 mb-3 mt-3">
+                  <span>
+                    <span class="product-buy-box__seller-rate-percent"
+                      >80%</span
+                    >
+                    رضایت از کالا
+                  </span>
+                  |
+                  <span
+                    >عملکرد
+
+                    <span class="product-buy-box__seller-rate-feedbak">
+                      عالی
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="product-buy-box__price d-flex align-items-center justify-content-between pt-3 pb-3"
+              >
+                <!-- right -->
+                <i class="fa fa-info-circle"></i>
+                <!-- left -->
+                <div>
+                  <!-- up -->
+                  <div
+                    class="d-flex justify-content-end align-items-center mb-2"
+                  >
+                    <span class="product-buy-box__price-old">2,500,000</span>
+                    <span class="product-price-discount">14%</span>
+                  </div>
+                  <!-- down -->
+                  <div class="d-flex">
+                    <span class="product-buy-box__price-new">1,189,000</span>
+                    <span>تومان</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-buy-box__addToBasket">
+                <button class="addToBasket-btn w-100">
+                  افزودن به سبد خرید
+                </button>
+                <div class="d-flex align-items-center mt-3 mb-3">
+                  <i class="fa-light fa-shield-check ml-2 fs-6"></i>
+                  گارانتی ۶ ماهه شرکت ورنا
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="mt-5 mb-5">
+          <!-- up -->
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="footer__logo-container">
+              <img
+                class="footer__logo"
+                src="../assets/images/full-horizontal.svg"
+                alt=""
+              />
+            </div>
+            <a href="#" class="footer__scrollToTop-btn"
+              >بازگشت به بالا
+              <i class="fa-light fa-chevron-up"></i>
+            </a>
+          </div>
+          <!-- bootom -->
+          <div class="d-flex footer__contact">
+            <p class="footer__contact-item">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
+            <p class="footer__contact-item">۰۲۱-۹۱۰۰۰۱۰۰</p>
+            <p class="footer__contact-item">
+              ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-5 mb-5 d-flex align-items-center justify-content-around footer-features d-sm-none d-md-none"
+        >
+          <a href="#" class="d-block footer-features__item">
+            <div class="footer-features__img-container">
+              <img
+                src="../assets/images/feature-1.svg"
+                class="footer-features__img"
+                alt=""
+              />
+            </div>
+            <p class="footer-features__title">اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس</p>
+          </a>
+          <a href="#" class="d-block footer-features__item">
+            <div class="footer-features__img-container">
+              <img
+                src="../assets/images/feature-2.svg"
+                class="footer-features__img"
+                alt=""
+              />
+            </div>
+            <p class="footer-features__title">امکان پرداخت در محل</p>
+          </a>
+          <a href="#" class="d-block footer-features__item">
+            <div class="footer-features__img-container">
+              <img
+                src="../assets/images/feature-3.svg"
+                class="footer-features__img"
+                alt=""
+              />
+            </div>
+            <p class="footer-features__title">۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ</p>
+          </a>
+          <a href="#" class="d-block footer-features__item">
+            <div class="footer-features__img-container">
+              <img
+                src="../assets/images/feature-4.svg"
+                class="footer-features__img"
+                alt=""
+              />
+            </div>
+            <p class="footer-features__title">هفت روز ضمانت بازگشت کالا</p>
+          </a>
+          <a href="#" class="d-block footer-features__item">
+            <div class="footer-features__img-container">
+              <img
+                src="../assets/images/feature-5.svg"
+                class="footer-features__img"
+                alt=""
+              />
+            </div>
+            <p class="footer-features__title">ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ</p>
+          </a>
+        </div>
+
+        <div class="row footer__block">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <p class="mb-3 fs-5">با دیجی‌کالا</p>
+            <a class="d-block mb-3" href="#">اتاق خبر دیجی‌کالا</a>
+            <a class="d-block mb-3" href="#">فروش در دیجی‌کالا</a>
+            <a class="d-block mb-3" href="#">فرصت‌های شغلی</a>
+            <a class="d-block mb-3" href="#">گزارش تخلف در دیجی‌کالا</a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <p class="mb-3 fs-5">فرصت‌های شغلی</p>
+            <a class="d-block mb-3" href="#">اتاق خبر دیجی‌کالا</a>
+            <a class="d-block mb-3" href="#">فروش در دیجی‌کالا</a>
+            <a class="d-block mb-3" href="#">فرصت‌های شغلی</a>
+            <a class="d-block mb-3" href="#">گزارش تخلف در دیجی‌کالا</a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <p class="mb-3 fs-5">راهنمای خرید از دیجی‌کالا</p>
+            <a class="d-block mb-3" href="#">اتاق خبر دیجی‌کالا</a>
+            <a class="d-block mb-3" href="#">فروش در دیجی‌کالا</a>
+            <a class="d-block mb-3" href="#">فرصت‌های شغلی</a>
+            <a class="d-block mb-3" href="#">گزارش تخلف در دیجی‌کالا</a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 footer-contact-us">
+            <p class="fs-5 footer-contact-us__title">همراه ما باشید!</p>
+            <div
+              class="footer-contact-us_itm-container mt-3 mb-3 d-flex align-items-center justify-content-around"
+            >
+              <i class="footer-contact-us__item fa-brands fa-instagram"></i>
+              <i class="footer-contact-us__item fa-brands fa-youtube"></i>
+              <i class="footer-contact-us__item fa-brands fa-telegram"></i>
+              <i class="footer-contact-us__item fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer-form">
+              <p class="footer-form__headline">
+                با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید
+              </p>
+              <div
+                class="footer-form__container mt-3 d-flex justify-content-between align-items-center"
+              >
+                <input
+                  class="footer-form__email"
+                  type="text"
+                  placeholder="راهنمای خرید از دیجی‌کالا"
+                />
+                <button class="footer-form__btn">ثبت</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-apps mt-5 mb-5 d-flex align-items-center justify-content-between"
+        >
+          <div class="d-flex footer-apps__right align-items-center">
+            <div class="footer-apps__img-container">
+              <img
+                class="footer-apps__img"
+                src="../assets/images/footerlogo2.png"
+                alt=""
+              />
+            </div>
+            <p class="footer-apps__txt">دانلود اپلیکیشن دیجی‌کالا</p>
+          </div>
+          <div class="footer-apps__left d-flex">
+            <a href="#" class="footer-apps__item-container">
+              <img
+                class="footer-apps__img"
+                src="../assets/images/sib-app.svg"
+                alt=""
+              />
+            </a>
+            <a href="#" class="footer-apps__item-container">
+              <img
+                class="footer-apps__img"
+                src="../assets/images/coffe-bazzar.svg"
+                alt=""
+              />
+            </a>
+            <a href="#" class="footer-apps__item-container">
+              <img
+                class="footer-apps__img"
+                src="../assets/images/myket.svg"
+                alt=""
+              />
+            </a>
+            <a href="#" class="footer-apps__item-container">
+              <img
+                class="footer-apps__img"
+                src="../assets/images/more.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex mt-5 mb-5 footer-trust">
+          <div class="footer-trust__right w-50">
+            <h1 class="footer-trust__seo-h1">
+              <strong
+                >فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</strong
+              >
+            </h1>
+            <p class="footer-trust__seo-description">
+              یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی
+              متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمان ی کوتاه به دست
+              مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی
+              که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و
+              توانسته از این طریق مشتریان ثابت خود را داشته باشد. یکی از
+              مهم‌ترین دغدغه‌های کاربران دیجی‌کالا یا هر فروشگاه‌ اینترنتی
+              دیگری، این است که کالای خریداری شده چه زمانی به دستشان می‌رسد.
+              دیجی‌کالا شیوه‌های مختلفی از ارسال را متناسب با فروشنده کالا،‌
+              مقصد کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد. هر
+              یک از روش های ارسال دیجی کالا شرایط و ویژگی‌های خاص خود را دارند
+              که ممکن است گاهی برای کاربران جدید، مبهم و پیچیده به نظر برسند.
+            </p>
+          </div>
+          <div
+            class="d-flex mr-5 align-items-center footer-trust__left w-50 justify-content-end"
+          >
+            <a href="#" class="footer-trust__item"
+              ><img
+                src="../assets/images/rezi.webp"
+                alt=""
+                class="footer-trust__img"
+            /></a>
+            <a href="#" class="footer-trust__item"
+              ><img
+                src="../assets/images/rezi.png"
+                alt=""
+                class="footer-trust__img"
+            /></a>
+            <a href="#" class="footer-trust__item"
+              ><img
+                src="../assets/images/rezi.png"
+                alt=""
+                class="footer-trust__img"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="footer-copyright__text">
+            برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع»
+            کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه
+            (فروشگاه آنلاین دیجی‌کالا) است.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });
+    </script>
+  </body>
+</html>
